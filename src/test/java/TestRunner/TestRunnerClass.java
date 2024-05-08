@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions (features = "src/main/resources/featurefiles", 
 					glue = {"stepDefFiles"},
-					plugin = {"pretty", "html:/target/cucumber-reports", "json:target/cucumber.json"},
+					plugin = {"pretty", "json:target/cucumber.json"},
 					monochrome = true,
 					publish = true
 		)
